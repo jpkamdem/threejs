@@ -142,14 +142,14 @@
       this[globalName] = mainExports;
     }
   }
-})({"2L15i":[function(require,module,exports) {
+})({"aP7aF":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 var HMR_USE_SSE = false;
-module.bundle.HMR_BUNDLE_ID = "207a8fdfe82f28a0";
+module.bundle.HMR_BUNDLE_ID = "d7fe96c059a40e7a";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, HMR_USE_SSE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -583,7 +583,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     });
 }
 
-},{}],"dV6cC":[function(require,module,exports) {
+},{}],"8lRBv":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _three = require("three");
 var _orbitControlsJs = require("three/examples/jsm/controls/OrbitControls.js");
@@ -660,7 +660,7 @@ function onClick(event) {
 }
 renderer.setAnimationLoop(animate);
 
-},{"three":"ktPTu","three/examples/jsm/controls/OrbitControls.js":"7mqRv","../assets/worldmap.jpg":"5x1MS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ktPTu":[function(require,module,exports) {
+},{"three":"ktPTu","three/examples/jsm/controls/OrbitControls.js":"7mqRv","../assets/worldmap.jpg":"hBDsL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ktPTu":[function(require,module,exports) {
 /**
  * @license
  * Copyright 2010-2023 Three.js Authors
@@ -32337,10 +32337,10 @@ class OrbitControls extends (0, _three.EventDispatcher) {
     }
 }
 
-},{"three":"ktPTu","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5x1MS":[function(require,module,exports) {
-module.exports = require("a31fb253a16b271a").getBundleURL("2MSMO") + "worldmap.a394cadb.jpg" + "?" + Date.now();
+},{"three":"ktPTu","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hBDsL":[function(require,module,exports) {
+module.exports = require("c28cf88a1f401fe7").getBundleURL("ixJtV") + "worldmap.a394cadb.jpg" + "?" + Date.now();
 
-},{"a31fb253a16b271a":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+},{"c28cf88a1f401fe7":"lgJ39"}],"lgJ39":[function(require,module,exports) {
 "use strict";
 var bundleURL = {};
 function getBundleURLCached(id) {
@@ -32375,6 +32375,6 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}]},["2L15i","dV6cC"], "dV6cC", "parcelRequire0102")
+},{}]},["aP7aF","8lRBv"], "8lRBv", "parcelRequire0102")
 
-//# sourceMappingURL=index.e82f28a0.js.map
+//# sourceMappingURL=index.59a40e7a.js.map
