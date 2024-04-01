@@ -1,0 +1,14 @@
+.popup {
+  background: #fff;
+  flex-flow: column;
+  align-items: center;
+  width: 20vw;
+  min-width: 350px;
+  padding: .25em 1em;
+  display: flex;
+}
+
+.popup p {
+  text-align: justify;
+}
+/*# sourceMappingURL=index.2cdaf7bc.css.map */

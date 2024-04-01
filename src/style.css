@@ -1,0 +1,12 @@
+.popup {
+    padding: .25em 1em;
+    width: 20vw;
+    min-width: 350px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background: #fff;
+}
+.popup p {
+    text-align: justify;
+}
