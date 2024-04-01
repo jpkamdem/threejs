@@ -589,6 +589,8 @@ var _three = require("three");
 var _orbitControlsJs = require("three/examples/jsm/controls/OrbitControls.js");
 var _worldmapJpg = require("../assets/worldmap.jpg");
 var _worldmapJpgDefault = parcelHelpers.interopDefault(_worldmapJpg);
+var _bandoneonPng = require("../assets/bandoneon.png");
+var _bandoneonPngDefault = parcelHelpers.interopDefault(_bandoneonPng);
 const renderer = new _three.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
@@ -616,10 +618,10 @@ dLight.position.set(-30, 0, 30);
 scene.add(dLight);
 // helpers
 // sidenote-> red: x (left- to right+), green: y (bottom- to top+), z: blue (backward- to forward+)
-const axesHelper = new _three.AxesHelper(5);
-scene.add(axesHelper);
-const dLightHelper = new _three.DirectionalLightHelper(dLight);
-scene.add(dLightHelper);
+// const axesHelper = new THREE.AxesHelper(5)
+// scene.add(axesHelper) 
+// const dLightHelper = new THREE.DirectionalLightHelper(dLight)
+// scene.add(dLightHelper)
 // Ajoutez un gestionnaire d'événements pour le clic sur la sphère
 renderer.domElement.addEventListener("click", onClick, false);
 let popup = null;
@@ -629,7 +631,7 @@ function onClick(event) {
         document.body.removeChild(popup);
         popup = null;
     }
-    // Obtenez la position du clic sur la sphère
+    // Obtenez la position du clic sur la sphèr
     const mouse = new _three.Vector2();
     mouse.x = event.clientX / window.innerWidth * 2 - 1;
     mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
@@ -639,6 +641,7 @@ function onClick(event) {
     if (intersects.length > 0) {
         const popupText = `
             <h2>Le bandon\xe9on</h2>
+            <img src=${(0, _bandoneonPngDefault.default)}>
             <p>L'accord\xe9on est l'instrument embl\xe9matique du tango argentin et poss\xe8de une histoire fascinante. Con\xe7u en Allemagne au XIX\xe8me si\xe8cle, il servait \xe0 l\u{2019}origine \xe0 jouer de la musique religieuse dans les \xe9glises. Cependant, lorsqu\u{2019}elle a \xe9t\xe9 introduite en Argentine au d\xe9but du XXe si\xe8cle, sa fortune a pris une tournure inattendue. Les immigrants allemands ont apport\xe9 cet instrument qui a rapidement conquis le c\u{153}ur des musiciens argentins. L'accord\xe9on est devenu un \xe9l\xe9ment central du tango, ajoutant une profondeur \xe9motionnelle \xe0 cette musique passionn\xe9e et sensuelle. Il existe une anecdote c\xe9l\xe8bre \xe0 propos du c\xe9l\xe8bre accord\xe9oniste argentin Astor Piazzolla qui a commenc\xe9 \xe0 jouer de l'accord\xe9on apr\xe8s en avoir entendu un enregistrement lorsqu'il \xe9tait enfant. Fascin\xe9 par le son de l'instrument, il apprend vite \xe0 en jouer et devient l'un des plus grands musiciens de tous les temps. Aujourd'hui, l'accord\xe9on continue de ravir le public du monde entier avec sa sonorit\xe9 unique et son riche h\xe9ritage culturel, incarnant l'essence du tango argentin.</p>
         `; // Remplacez par le contenu souhaité
         // Créez et affichez un nouveau popup
@@ -660,7 +663,7 @@ function onClick(event) {
 }
 renderer.setAnimationLoop(animate);
 
-},{"three":"ktPTu","three/examples/jsm/controls/OrbitControls.js":"7mqRv","../assets/worldmap.jpg":"hBDsL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ktPTu":[function(require,module,exports) {
+},{"three":"ktPTu","three/examples/jsm/controls/OrbitControls.js":"7mqRv","../assets/worldmap.jpg":"hBDsL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../assets/bandoneon.png":"5Lmb5"}],"ktPTu":[function(require,module,exports) {
 /**
  * @license
  * Copyright 2010-2023 Three.js Authors
@@ -32375,6 +32378,9 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}]},["aP7aF","8lRBv"], "8lRBv", "parcelRequire0102")
+},{}],"5Lmb5":[function(require,module,exports) {
+module.exports = require("aab694a96441fbce").getBundleURL("ixJtV") + "bandoneon.a4b97466.png" + "?" + Date.now();
+
+},{"aab694a96441fbce":"lgJ39"}]},["aP7aF","8lRBv"], "8lRBv", "parcelRequire0102")
 
 //# sourceMappingURL=index.59a40e7a.js.map

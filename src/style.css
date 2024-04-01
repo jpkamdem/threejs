@@ -10,3 +10,6 @@
 .popup p {
     text-align: justify;
 }
+.popup img {
+    width: 80%;
+}

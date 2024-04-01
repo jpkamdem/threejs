@@ -2,6 +2,7 @@ import * as THREE from 'three'
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js'
 
 import worldmap from '../assets/worldmap.jpg'
+import bandoneon from '../assets/bandoneon.png'
 
 const renderer = new THREE.WebGLRenderer()
 renderer.setSize(window.innerWidth, window.innerHeight)
@@ -42,10 +43,10 @@ scene.add(dLight)
 
 // helpers
 // sidenote-> red: x (left- to right+), green: y (bottom- to top+), z: blue (backward- to forward+)
-const axesHelper = new THREE.AxesHelper(5)
-scene.add(axesHelper) 
-const dLightHelper = new THREE.DirectionalLightHelper(dLight)
-scene.add(dLightHelper)
+// const axesHelper = new THREE.AxesHelper(5)
+// scene.add(axesHelper) 
+// const dLightHelper = new THREE.DirectionalLightHelper(dLight)
+// scene.add(dLightHelper)
 
 // Ajoutez un gestionnaire d'événements pour le clic sur la sphère
 renderer.domElement.addEventListener('click', onClick, false);
@@ -59,7 +60,7 @@ function onClick(event) {
         popup = null;
     }
 
-    // Obtenez la position du clic sur la sphère
+    // Obtenez la position du clic sur la sphèr
     const mouse = new THREE.Vector2();
     mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
     mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
@@ -71,6 +72,7 @@ function onClick(event) {
     if (intersects.length > 0) {
         const popupText = `
             <h2>Le bandonéon</h2>
+            <img src=${bandoneon}>
             <p>L'accordéon est l'instrument emblématique du tango argentin et possède une histoire fascinante. Conçu en Allemagne au XIXème siècle, il servait à l’origine à jouer de la musique religieuse dans les églises. Cependant, lorsqu’elle a été introduite en Argentine au début du XXe siècle, sa fortune a pris une tournure inattendue. Les immigrants allemands ont apporté cet instrument qui a rapidement conquis le cœur des musiciens argentins. L'accordéon est devenu un élément central du tango, ajoutant une profondeur émotionnelle à cette musique passionnée et sensuelle. Il existe une anecdote célèbre à propos du célèbre accordéoniste argentin Astor Piazzolla qui a commencé à jouer de l'accordéon après en avoir entendu un enregistrement lorsqu'il était enfant. Fasciné par le son de l'instrument, il apprend vite à en jouer et devient l'un des plus grands musiciens de tous les temps. Aujourd'hui, l'accordéon continue de ravir le public du monde entier avec sa sonorité unique et son riche héritage culturel, incarnant l'essence du tango argentin.</p>
         `; // Remplacez par le contenu souhaité
 
